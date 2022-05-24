@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="imagem/png"
+      href="bootstrap/Public/img/weather.png"
+    />
+    <title>Star Wars SWAPI</title>
+    <link rel="stylesheet" href="Public/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="Public/css/swapi.css" />
+  </head>
+  <body>
+    <div id="test" class="container">
+      <nav  class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/index.html">
+            <img src="./Public/img/star-wars-logo.svg" id="star-wars">
+            SWAPI</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <h1>Personagens</h1>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Height</th>
+            <th scope="col">Mass</th>
+            <th scope="col">Gender</th>
+          </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+      </table>
+
+      <div id="buttons">
+        <button class="button-page" id="previous">  <-  </button>
+        <button class="button-page" id="next">  ->  </button>
+      </div>
+
+    </div>
+
+    <script src="Public/js/table-manipulation.js"></script>
+    <script src="Public/js/swapi.js"></script>
+    <script src="Public/js/bootstrap.min.js"></script>
+  </body>
+</html>
